@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
+}
+section .imgBx:before{
+    content: '';
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(15deg,#474043,#446879);
+    z-index: 1;
+    mix-blend-mode: screen;
+
+}
+section .imgBx img{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+section .contentBx .formBx {
+    width: 50%;
+}
+section .contentBx .formBx h2{
+color: #607d8b;
+font-size: 2.5rem;
+text-transform: uppercase;
+margin-bottom: 2rem;
+border-bottom: 0.4rem solid #ec598a;
+display: inline-block;
+letter-spacing: 0.81rem;
+}
+
+section .contentBx .formBx .inputBx span{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #607d8b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2rem;
+    line-height: 4rem;
+}
+section .contentBx .formBx .inputBx input{
+width: 100%;
+padding: 0.1rem 0.2rem;
+outline: none;
+border: 0.1rem solid #607d8b;
+font-size: 1.6rem;
+background: transparent;
+border-radius: 3rem;
+}
+section .contentBx .formBx .sb input[type="submit"]
+  {
+      background: #5e41ff;
+      color: #fff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      border: 0.1rem solid #607d8b;
+      font-size: 1.6rem;
+      border-radius: 3rem;
+      width: 60%;
+      position: relative;
+      left: 6rem;
+      
+  }
+  section .contentBx .formBx .sb input[type="submit"]:active{
+    transform: translateY(0.3rem);
+  }  
+section .contentBx .formBx .forgot{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+  
+section .contentBx .formBx .acc{
+    padding-top: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+section .contentBx .formBx h3{
+    display: flex; 
+    padding-top: 4rem;
+    justify-content: center;
+
+}
+
+section .contentBx .formBx .facebook{
+
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+section .contentBx .formBx .facebook a{
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(248, 242, 242);
+    border-radius:3rem;
+    text-align: center;
+    align-self: center;
+    margin: 1rem;
+    line-height: 3rem;
+    box-shadow: 0.1rem 0.3rem 0rem 0.1rem #dcdde1;
+    color: rgb(3, 3, 3);
+}
+section .contentBx .formBx .facebook a i{
+    transition: all 0.3s linear;
+}
+
+section .contentBx .formBx .facebook a:hover i{
+    transform: scale(1.4);
+    color: rgb(16, 19, 212);
+    background-color: white;
+}
+
+section .contentBx .formBx .gmail{
+
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+section .contentBx .formBx .gmail a{
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(248, 242, 242);
+    border-radius:3rem;
+    text-align: center;
+    align-self: center;
+    margin: 1rem;
+    line-height: 3rem;
+    box-shadow: 0.1rem 0.3rem 0rem 0.1rem #dcdde1;
+    color: rgb(3, 3, 3);
+}
+section .contentBx .formBx .gmail a i{
+    transition: all 0.3s linear;
+}
+
+section .contentBx .formBx .gmail a:hover i{
+    transform: scale(1.4);
+    color: rgb(221, 26, 0);
+    background-color: white;
+}
+@media only screen and (max-width: 1260px) {
+    html {
+      font-size: 73%;
+    }
+} 
+@media only screen and (max-width: 1000px) {
+    html {
+      font-size: 58%;
+    }
+} 
+@media only screen and (max-width: 360px) {
+    html {
+      font-size: 20%;
+    }
+    .imgBx{
+        background-image: url(../img/ezgif.com-gif-maker.gif);
+    }
+}  

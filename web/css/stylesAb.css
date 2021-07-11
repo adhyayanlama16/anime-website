@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.html{
+    font-size: 62.5%;
+}
+.navbar{
+    display: flex;
+     height: 30rem;
+     left: 13rem;
+     align-items: center;
+     justify-content: center;
+     position: sticky;
+     top: 0rem;
+     cursor: pointer;
+     background-image: url(../img/Ab.jpg);
+     background-attachment:unset;
+
+}
+
+.about{
+    text-decoration:solid;
+    font-family: 'Lalezar', cursive;
+    color: rgb(20, 22, 24);
+    font-size: 5.8rem;
+    position: relative;
+    top: 15rem;
+
+
+}
+.SectionDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color: black;
+    font-family:'Rubik', sans-serif;
+    width: 85%;
+    margin: auto;
+    padding-top: 5rem;
+    font-size: 1.8rem;
+    
+    
+}
+
+.contact{
+    
+    height: 0rem;
+    text-align: center;
+
+    
+}
+.icons{
+
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icons a{
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(68, 64, 64);
+    border-radius:5rem;
+    text-align: center;
+    margin: 1rem;
+    line-height: 4rem;
+    box-shadow: 0.1rem 0.4rem 0.2rem 0.2rem #dcdde1;
+    color: white;
+}
+.icons a i{
+    transition: all 0.3s linear;
+}
+
+.icons a:hover i{
+    transform: scale(1.4);
+    
+}
+
+@media only screen and (max-width: 1227px) {
+    html {
+      font-size: 83%;
+    }
+
+    .background{
+        background-image: url(../img/Ab1227.jpg);
+    background-size: cover;
+   
+    }
+  } 
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 75%;
+    }
+
+    .background{
+        background-image: url(../img/Ab.jpg);
+    background-size: cover;
+   
+    }
+  } 
